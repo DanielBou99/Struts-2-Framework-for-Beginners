@@ -5,7 +5,17 @@
     
 <struts>
 	<constant name="struts.custom.i18n.resources" value="global" />
+	
 	<package name="productManagementApp" extends="struts-default">
+		
+		<interceptors>
+			<interceptor name="ageGroupInterceptor" class="interceptors.AgeGroupInterceptor" />
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="ageGroupInterceptor" />
+			</interceptor-stack>
+		</interceptors>
+		
 		<action name="loginAction" class="action.LoginAction">
 			<result name="success" type="redirect">welcomeAction</result>
 			<result name="input">/login.jsp</result>
@@ -15,6 +25,7 @@
 			<result name="error">/error.jsp</result>
 		</action>
 		<action name="addAction" class="action.AddAction">
+			<interceptor-ref name="myStack" />
 			<result name="success" type="redirect">welcomeAction</result>
 			<result name="error">/error.jsp</result>
 			<result name="input">/addProduct.jsp</result>
@@ -35,5 +46,7 @@
 		<action name="changeLocaleAction" class="action.ChangeLocaleAction">
 			<result name="input">/addProduct.jsp</result>
 		</action>
+		
 	</package>
+	
 </struts>

@@ -1,0 +1,8 @@
+/action/
+/dao/
+/dbutil/
+/global.properties
+/global_en_US.properties
+/pojo/
+/struts.xml
+/interceptors/

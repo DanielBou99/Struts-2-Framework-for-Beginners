@@ -15,6 +15,7 @@ public class AddAction extends ActionSupport{
 	Integer productPrice;
 	
 	public String execute() {
+		
 		String statusCode = "";
 		System.out.println("execute() method called");
 		Product product = new Product(productId, productName, productCategory, productPrice);

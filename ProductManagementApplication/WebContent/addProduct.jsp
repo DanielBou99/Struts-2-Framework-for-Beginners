@@ -21,7 +21,6 @@
 		</s:form>
 	</div>
 	
-	
 	<s:url action="changeLocaleAction" var="urlEn">
 		<s:param name="request_locale">pt_BR</s:param>
 	</s:url>
