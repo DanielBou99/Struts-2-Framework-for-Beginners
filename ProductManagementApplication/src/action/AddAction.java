@@ -60,4 +60,8 @@ public class AddAction extends ActionSupport{
 		this.productPrice = productPrice;
 	}
 	
+	/*public void validate() {
+		System.out.println("validade() na action");
+	}*/
+	
 }

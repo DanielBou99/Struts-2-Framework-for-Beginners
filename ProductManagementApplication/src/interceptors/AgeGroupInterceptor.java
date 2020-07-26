@@ -32,7 +32,6 @@ public class AgeGroupInterceptor implements Interceptor {
 		stack.set("productName", "INTERCEPTOR");
 		stack.set("productPrice", 1);
 		
-		
 		System.out.println("AgeGroupInterceptor - price after = " + price);
 		System.out.println("AgeGroupInterceptor - name after = " + name);
 		

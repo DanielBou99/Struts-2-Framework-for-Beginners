@@ -6,13 +6,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Add New Product</title>
+<s:head />
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 	<div align="center">
 		<h2>Add New Product</h2>
-		<s:form action="addAction" class="formTable">
+		<s:form action="addAction" namespace="/" class="formTable">
 			<s:textfield name="productId" key="global.productId" class="formTextField"/>
 			<s:textfield name="productName" key="global.productName" class="formTextField"/>
 			<s:textfield name="productCategory" key="global.productCategory" class="formTextField"/>

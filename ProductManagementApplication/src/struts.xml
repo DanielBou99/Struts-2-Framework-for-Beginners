@@ -24,12 +24,14 @@
 			<result name="success">/welcome.jsp</result>
 			<result name="error">/error.jsp</result>
 		</action>
+		
 		<action name="addAction" class="action.AddAction">
 			<interceptor-ref name="myStack" />
 			<result name="success" type="redirect">welcomeAction</result>
 			<result name="error">/error.jsp</result>
 			<result name="input">/addProduct.jsp</result>
 		</action>
+		
 		<action name="updateDataAction" class="action.UpdateDataAction">
 			<result name="success">/updateProduct.jsp</result>
 			<result name="error">/error.jsp</result>
